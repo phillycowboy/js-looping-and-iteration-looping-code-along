@@ -1,17 +1,16 @@
 // Code your solutions in this file
 
-function writeCards(namesArray, event) {
-    let thankYou = []
-    for (let i = 0; i < namesArray.length; i++){
-        thankYou.push(`Thank you, ${namesArray[i]}, for the wonderful ${event} gift!`)
+function writeCards(array, event) {
+    let thankYou = [];
+    for(let i = 0; i < array.length; i ++){
+        thankYou.push(`Thank you, ${array[i]}, for the wonderful ${event} gift!`);
     }
-    return thankYou
+    return thankYou;
 }
 
-function countDown(number) {
-    while (number > 0) {
-        console.log(number);
-        number -= 1;
-    } 
-    console.log(number)
+function countDown(num) {
+    while (num >= 0) {
+        console.log(num);
+        num--
+    }
 }
